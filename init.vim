@@ -16,6 +16,7 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' } " Coc wrapper
 
 set encoding=UTF-8
 
@@ -31,4 +32,4 @@ let NERDTreeShowHidden=1
 
 :colorscheme termschool
 
-inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+inoremap <expr> <Enter> pumvisible() ? coc#_select_confirm() : "<Enter>"
