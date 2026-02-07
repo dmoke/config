@@ -1,0 +1,87 @@
+{
+  "workbench.editorAssociations": {
+    "*.vjs_c": "default",
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "files.autoSave": "afterDelay",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineHeight": 0.9,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "ms-settings",
+  ],
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "explorer.confirmDelete": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true
+  },
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "haiku",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "git.enableSmartCommit": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.activityBar.location": "top",
+  "terminal.integrated.defaultProfile.linux": "",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "terminal.background": "#000000",
+      "editor.background": "#141615",
+      "editorGroup.border": "#ffffff17",
+      // "sideBar.background": "#04040467",
+      "sideBar.background": "#000000",
+      "list.activeSelectionBackground": "#333b7270",
+      "list.inactiveSelectionBackground": "#333b7270",
+      // "list.inactiveSelectionForeground": "#ffffff",
+      "list.inactiveFocusOutline": "#eb32d6",
+      "panel.background": "#000000",
+      "commandCenter.background": "#0000006f",
+      "editorGroupHeader.tabsBackground": "#000000",
+      "tab.activeBackground": "#070b2a",
+      // "tab.activeBorder": "#eb32d6",
+      // "editorCursor.foreground":"#eb32d6"
+    },
+  },
+  "vim.disableExtension": true,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.aiStats.enabled": false,
+  "cSpell.checkVSCodeSystemFiles": true,
+  "cSpell.enabled": false,
+  "cSpell.maxDuplicateProblems": 1,
+  "cSpell.userWords": [
+    "esbenp",
+    "testuser"
+  ],
+  "cSpell.ignoreRegExpList": [
+    "/\\b[A-Z]+\\b/", // ignore all-uppercase words
+  ],
+  "editor.padding.top": 100,
+  "editor.inlayHints.padding": true,
+  "playwright.reuseBrowser": true,
+  "editor.minimap.size": "fill",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
