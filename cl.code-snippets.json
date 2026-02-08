@@ -1,0 +1,18 @@
+{
+  "Console log": {
+    "prefix": "cl",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Quick console.log"
+  },
+    "Arrow function": {
+    "prefix": "af",
+    "body": [
+      "const $1 = ($2) => {",
+      "  $3",
+      "};"
+    ],
+    "description": "Create arrow function"
+  }
+}

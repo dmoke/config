@@ -1,0 +1,1 @@
+PS1='\[\e[92m\]dima@dev \[\e[94m\]\w\[\e[94m\]$(git branch --show-current 2>/dev/null | sed "s/^/ (/;s/$/)/") \[\e[95m\]$\[\e[0m\] '
