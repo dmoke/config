@@ -6,7 +6,7 @@
     ],
     "description": "Quick console.log"
   },
-    "Arrow function": {
+  "Arrow function": {
     "prefix": "af",
     "body": [
       "const $1 = ($2) => {",
@@ -14,5 +14,33 @@
       "};"
     ],
     "description": "Create arrow function"
+  },
+  "Python Main": {
+    "scope": "python",
+    "prefix": "main",
+    "body": [
+      "def main():",
+      "    $0",
+      "",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ],
+    "description": "Create Python main() function with __name__ guard"
+  },
+  "Python Comment Divider": {
+    "scope": "python",
+    "prefix": "line===",
+    "body": [
+      "#==================================== $1 ===================================="
+    ],
+    "description": "Insert a Python comment divider for big logic sections"
+  },
+  "JavaScript Comment Divider": {
+    "scope": "javascript,typescript",
+    "prefix": "line===",
+    "body": [
+      "/==================================== $1 ===================================/"
+    ],
+    "description": "Insert a JS/TS comment divider for big logic sections"
   }
 }
