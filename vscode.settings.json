@@ -6,12 +6,30 @@
   "files.autoSave": "afterDelay",
   "workbench.iconTheme": "material-icon-theme",
   "editor.lineHeight": 0.9,
-  "[jsonc]": {
+
+  // Formatters
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": true,
+
+  // Python formatting
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "88"],
+
+  // Terminal
   "terminal.integrated.allowedLinkSchemes": [
     "file",
     "http",
@@ -21,67 +39,63 @@
     "vscode-insiders",
     "ms-settings",
   ],
-  "github.copilot.nextEditSuggestions.enabled": false,
-  "explorer.confirmDelete": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "typescript": true
-  },
-  "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "haiku",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "git.enableSmartCommit": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "top",
-  "terminal.integrated.defaultProfile.linux": "",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.initialHint": false,
   "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
+
+  // Git / Copilot
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true,
+  },
+  "git.enableSmartCommit": true,
+
+  // VSCode layout
+  "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
       "terminal.background": "#000000",
       "editor.background": "#141615",
       "editorGroup.border": "#ffffff17",
-      // "sideBar.background": "#04040467",
       "sideBar.background": "#000000",
       "list.activeSelectionBackground": "#333b7270",
       "list.inactiveSelectionBackground": "#333b7270",
-      // "list.inactiveSelectionForeground": "#ffffff",
       "list.inactiveFocusOutline": "#eb32d6",
       "panel.background": "#000000",
       "commandCenter.background": "#0000006f",
       "editorGroupHeader.tabsBackground": "#000000",
       "tab.activeBackground": "#070b2a",
-      // "tab.activeBorder": "#eb32d6",
-      // "editorCursor.foreground":"#eb32d6"
     },
   },
-  "vim.disableExtension": true,
-  "workbench.editor.empty.hint": "hidden",
-  "editor.aiStats.enabled": false,
-  "cSpell.checkVSCodeSystemFiles": true,
-  "cSpell.enabled": false,
-  "cSpell.maxDuplicateProblems": 1,
-  "cSpell.userWords": [
-    "esbenp",
-    "testuser"
-  ],
-  "cSpell.ignoreRegExpList": [
-    "/\\b[A-Z]+\\b/", // ignore all-uppercase words
-  ],
+
+  // Editor tweaks
   "editor.padding.top": 100,
   "editor.inlayHints.padding": true,
-  "playwright.reuseBrowser": true,
   "editor.minimap.size": "fill",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "editor.aiStats.enabled": false,
+  "editor.defaultFormatter": null,
+
+  // Spell / lint
+  "cSpell.enabled": false,
+  "cSpell.checkVSCodeSystemFiles": true,
+  "cSpell.maxDuplicateProblems": 1,
+  "cSpell.userWords": ["esbenp", "testuser"],
+  "cSpell.ignoreRegExpList": ["/\\b[A-Z]+\\b/"],
+
+  // Extensions tweaks
+  "vim.disableExtension": true,
+  "playwright.reuseBrowser": true,
+  "eslint.format.enable": false,
+  "workbench.editor.empty.hint": "hidden",
+  "playwright.pickLocatorCopyToClipboard": false,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "editor.codeLens": false,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false
 }
